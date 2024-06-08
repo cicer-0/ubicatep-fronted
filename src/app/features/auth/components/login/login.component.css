@@ -1,0 +1,184 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    background-color: #f0f2f5;
+    background-image: url('assets/images/createAccount_BG@3x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; /* Asegura que haya padding alrededor del contenedor en pantallas pequeñas */
+  }
+  
+  .login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el ancho total */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el ancho total */
+  }
+  
+  input:focus {
+    border-color: #4B39EF;
+  }
+  
+  .password-group {
+    position: relative;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4B39EF;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .forgot-password {
+    background: none;
+    color: #4B39EF;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    border: 0;
+  }
+  
+  .login-button {
+    background-color: #39D2C0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #34c6b3;
+  }
+  
+  .create-account {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .create-account span {
+    margin-right: 8px;
+  }
+  
+  .create-account button {
+    background: none;
+    color: #39D2C0;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .login-container {
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  
+    .login-card {
+      margin-top: 20px;
+      padding: 20px;
+      max-width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    }
+  
+    .logo-container {
+      margin-bottom: 16px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  
+    .form-group {
+      margin-bottom: 16px;
+    }
+  
+    .actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .forgot-password {
+      margin-bottom: 16px;
+    }
+  
+    .login-button {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .create-account {
+      margin-top: 16px;
+      font-size: 12px;
+    }
+  }
+  
