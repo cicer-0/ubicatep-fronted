@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    height: 100vh;
     background-color: #f0f2f5;
-    background-image: url('assets/images/createAccount_BG@3x.png');
+    background-image: url('/assets/images/createAccount_BG@3x.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
