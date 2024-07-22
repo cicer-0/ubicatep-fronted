@@ -1,0 +1,11 @@
+<div class="search-bar container mt-5 pt-3">
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="searchQuery"
+      placeholder="Ubicación, Nombre, zona..."
+    />
+    <button class="btn btn-primary" (click)="search()">Buscar</button>
+  </div>
+</div>

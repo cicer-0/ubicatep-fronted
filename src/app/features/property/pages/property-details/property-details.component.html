@@ -1,0 +1,27 @@
+<div class="container mt-5 pt-3">
+    <div class="card property-details-card">
+      <img [src]="property.image" class="card-img-top" alt="Property Image">
+      <div class="card-body">
+        <app-back-button></app-back-button>
+        <h5 class="card-title">{{ property.title }}</h5>
+        <p class="card-text">{{ property.address }}</p>
+        <p class="card-text"><i class="bi bi-star-fill text-warning"></i> {{ property.reviews }}</p>
+        <p class="card-text"><strong>DESCRIPCIÓN</strong></p>
+        <p class="card-text">{{ property.description }}</p>
+        <p class="card-text"><strong>Beneficios</strong></p>
+        <div class="amenities">
+          <app-amenity-indicator *ngFor="let amenity of property.amenities" [icon]="amenity.icon" [tooltip]="amenity.tooltip"></app-amenity-indicator>
+        </div>
+      </div>
+    </div>
+    <div class="payment-section mt-4 p-3 bg-dark text-white rounded">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h5>S/.{{ property.price }} <small>+ impuestos</small></h5>
+          <p class="mb-0">Mensual</p>
+        </div>
+        <button class="btn btn-primary" (click)="payNow()">Pagar</button>
+      </div>
+    </div>
+  </div>
+  
